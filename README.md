@@ -25,30 +25,39 @@ Recognizing that stock prices are inherently sequential, the final step was to i
 After scaling the features and reshaping the data into 60-day sequences, the LSTM was trained and evaluated. It consistently outperformed the Random Forest, achieving a precision score in the 55-58% range, demonstrating the value of using a sequence-aware architecture for this type of forecasting task.
 
 Technology Stack
-Python 3.x
+ Python 3.x
 
-Pandas & NumPy for data manipulation
+ Pandas & NumPy for data manipulation
 
-yfinance for downloading historical stock data
+ yfinance for downloading historical stock data
 
-Scikit-learn for the RandomForestClassifier and evaluation metrics
+ Scikit-learn for the RandomForestClassifier and evaluation metrics
 
-TensorFlow & Keras for building and training the LSTM model
+ TensorFlow & Keras for building and training the LSTM model
 
-Matplotlib & Seaborn for data visualization
+ Matplotlib & Seaborn for data visualization
 
 How to Use This Repository
-Clone the repository to your local machine.
+ Clone the repository to your local machine.
 
-Install the required libraries:
+ Install the required libraries:
 
-pip install yfinance pandas scikit-learn tensorflow matplotlib seaborn
+ pip install yfinance pandas scikit-learn tensorflow matplotlib seaborn
 
-Open and run the Stock_Market_Predictor.ipynb notebook in a Jupyter environment.
+ Open and run the Stock_Market_Predictor.ipynb notebook in a Jupyter environment.
 
 Key Takeaways
-Backtesting is crucial for an honest evaluation of financial forecasting models.
+ Backtesting is crucial for an honest evaluation of financial forecasting models.
 
-Thoughtful feature engineering can significantly improve model performance by providing essential context.
+ Thoughtful feature engineering can significantly improve model performance by providing essential context.
 
-Sequence-aware models like LSTMs are highly effective for time-series data and can offer a superior predictive edge compared to traditional models.
+ Sequence-aware models like LSTMs are highly effective for time-series data and can offer a superior predictive edge compared to traditional models.
+
+Results Summary
+ After feature engineering and tuning, both models demonstrated a predictive edge over a random guess. The  final RandomForestClassifier, tuned with a 60% probability threshold, produced the following result on the test set:
+
+Random Forest Precision: ~54.3%
+
+LSTM Precision: ~55-58%
+
+The LSTM model showed a slight performance improvement, highlighting the advantage of using a sequence-aware model for financial time-series data.
