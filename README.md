@@ -1,4 +1,5 @@
 S&P 500 Daily Price Movement Prediction using Machine Learning
+
 This project explores the challenge of predicting the daily price movement of the S&P 500 index. It follows an iterative data science workflow, starting with a simple model and progressively enhancing it with more sophisticated features and a more robust evaluation framework. The goal was to develop a model with a measurable predictive edge over a random guess.
 
 Project Journey & Methodology
